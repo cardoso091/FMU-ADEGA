@@ -37,7 +37,6 @@ public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoV
     holder.binding.txtProdutoName.setText(produtoList.get(position).getProdutoName());
     holder.binding.txtProdutoDescricao.setText(produtoList.get(position).getProdutoDescricao());
     holder.binding.txtPrice.setText(produtoList.get(position).getPrice());
-
     }
 
     @Override

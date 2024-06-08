@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    //criando card da imagem do produto definido tamanha altura etc.//
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        //Definindo tamanha da imagen no card//
+
+        <ImageView
+            android:id="@+id/imgProduto"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/produto1" />
+
+    </androidx.cardview.widget.CardView>
+
+    //criando a caixa de texto para o nome do produto//
+
+    <TextView
+        android:id="@+id/txtProdutoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Produto Name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/containerImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    //criando a caixa de texto para descrição do produto//
+
+    <TextView
+        android:id="@+id/txtProdutoDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="10dp"
+        android:text="Johnnie Walker Whisky Red Label. O blend pioneiro que lançou o Johnnie Walker para o mundo e hoje é o whisky escocês mais vendido."
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/containerImg"
+        app:layout_constraintTop_toBottomOf="@id/txtProdutoName" />
+
+    //caixa do preço do produto//
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="$ 120,00"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/containerImg"
+        app:layout_constraintTop_toBottomOf="@id/txtProdutoDescricao" />
+
+    //Criando botao para add no carinho de comrpas//
+
+    <Button
+        android:id="@+id/btAddCart"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/red"
+        android:text="Add Cart"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@id/txtProdutoDescricao" />
+
+    //Linha branca para separa os item de cada produto//
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btAddCart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

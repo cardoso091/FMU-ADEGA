@@ -20,6 +20,7 @@ public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoV
     public ProdutoAdapter(ArrayList<Produto> produtoList, Context context) {
         this.produtoList = produtoList;
         this.context = context;
+
     }
 
 

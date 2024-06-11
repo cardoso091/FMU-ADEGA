@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/black">
 
-    //criando card da imagem do produto definido tamanha altura etc.//
 
     <androidx.cardview.widget.CardView
         android:id="@+id/containerImg"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        //Definindo tamanha da imagen no card//
+
 
         <ImageView
             android:id="@+id/imgProduto"
@@ -26,11 +26,11 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:src="@drawable/produto1" />
+            android:src="@drawable/produto3" />
 
     </androidx.cardview.widget.CardView>
 
-    //criando a caixa de texto para o nome do produto//
+
 
     <TextView
         android:id="@+id/txtProdutoName"
@@ -45,7 +45,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    //criando a caixa de texto para descrição do produto//
 
     <TextView
         android:id="@+id/txtProdutoDescricao"
@@ -62,7 +61,7 @@
         app:layout_constraintStart_toEndOf="@id/containerImg"
         app:layout_constraintTop_toBottomOf="@id/txtProdutoName" />
 
-    //caixa do preço do produto//
+
 
     <TextView
         android:id="@+id/txtPrice"
@@ -76,7 +75,7 @@
         app:layout_constraintStart_toEndOf="@id/containerImg"
         app:layout_constraintTop_toBottomOf="@id/txtProdutoDescricao" />
 
-    //Criando botao para add no carinho de comrpas//
+
 
     <Button
         android:id="@+id/btAddCart"
@@ -92,7 +91,7 @@
         app:layout_constraintStart_toEndOf="@id/txtPrice"
         app:layout_constraintTop_toBottomOf="@id/txtProdutoDescricao" />
 
-    //Linha branca para separa os item de cada produto//
+
 
     <View
         android:id="@+id/view"

@@ -19,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-
         <ImageView
             android:id="@+id/imgProduto"
             android:layout_width="100dp"
